@@ -1,0 +1,32 @@
+Game Doc:
+
+A game in which you have to use the arrow keys or 'a' and 'd' to balance a chair on either
+it's left set of legs or it's right set of legs for as long as possible.
+Falling over means death, points are accumulated every second that the chairs legs are off
+the ground and there is a time limit.
+
+The chair will consist of a rigig body object with a center pivot and a quad with a
+small person in a chair attached to said quad, the quad will have a center pivot and should
+rotate as the rigidbody does.
+
+There will be 'sensors' attaced to the sides and bottoms of the legs of the chair to detect the
+'ground'
+
+The game states:
+    menu - the game is in the starting menu mode
+    play - the game is actually being played
+    pause - the game is paused
+    gameOver - the game is ober and the retry screen is shown
+
+Player (chair) states:
+    initial - the chair has not been moved
+    balancing - the chair is currently being balanced
+    fallen - the chair has either fallen or went back to the initial position
+
+Score modifiers:
+    5 seconds - 1.5x
+    10 seconds - 2x
+    20 seconds - 3x
+    30 seconds - 4x
+    60 seconds - 10x
+    60+ seconds - 100x
